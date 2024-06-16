@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heart disease analysis</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;   
+    }  
+</style>
+<body>
+        <h1>HEART DISEASE ANALYSIS</h1>
+        <form method="post" action="/predict">
+            <label>Age: Age of the patient.</label><br>
+            <input type="number" name="age"><br><br>
+            <label>Sex: Sex of the patient (Male/Female) 1 for male 0 for female</label><br>
+            <input type="number" name="sex"><br><br>
+            <label>Chest Pain Type (cp): 1: Typical angina 2: Atypical angina 3: Non-anginal pain 4: Asymptomatic  </label><br>
+            <input type="number" name="cp"><br><br>
+            <label>Resting Blood Pressure (trtbps): Resting blood pressure (in mm Hg).</label><br>
+            <input type="number" name="trtps"><br><br>
+            <label>Cholesterol (chol)</label><br>
+            <input type="number" name="chol"><br><br>
+            <label>Fasting Blood Sugar (fbs): Fasting blood sugar > 120 mg/dl; 1 for yes ,2 for no</label><br>
+            <input type="number" name="fps"><br><br>
+            <label>Rest ECG (restecg): Resting electrocardiographic results showing heart's electrical activity: 1 for yes ,2 for no:-</label><br>
+            <input type="number" name="restecg"><br><br>
+            <label>Max Heart Rate Achieved (thalach).</label><br>
+            <input type="number" name="thalach"><br><br>
+            <label>Exercise Induced Angina (exang): Angina induced by exercise (1 = yes; 0 = no).</label><br>
+            <input type="number" name="exang"><br><br>
+            <label>Oldpeak: ST depression induced by exercise relative to rest.</label><br>
+            <input type="number" name="oldpeak" step="0.01"><br><br>
+            <label>slope: the slope of the peak exercise ST segment — 0: downsloping; 1: flat; 2: upsloping</label><br>
+            <input type="number" name="slope"><br><br>
+            <label>Number of Major Vessels (ca): Number of major vessels colored by fluoroscopy (0-3).</label><br>
+            <input type="number" name="ca"><br><br>
+            <label>Thal: A blood disorder called thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect).</label><br>
+            <input type="number" name="thal"><br><br>
+            <input type="submit" value="predict">
+        </form>
+</body>
+</html>
